@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.title {
+    margin: 100px;
+}
+
+.coming {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}

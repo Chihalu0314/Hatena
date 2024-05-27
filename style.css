@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.titles {
+    margin: 70px;
+}
+
+.title {
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
