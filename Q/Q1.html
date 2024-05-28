@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Q2.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="title">
+        <span class="title_text">Q1：メールが届かない</span>
+    </div>
+
+    <section class="sec">
+        <div class="answer">
+            <span class="answer-video"><a href="#">動画で見る</a></span>
+        </div>
+
+        <div class="a-list">
+            <ul class="a-ul">
+                <li class="a-li-1">
+                    <span class="toggle-button">⑴ バッテリーの節約機能や最適化機能がオンになっている</span>
+                    <div class="details">
+                        オンになっていたらオフにする
+                    </div>
+                </li>
+                <li class="a-li-2">
+                    <span class="toggle-button">⑵ メールアプリを起動して、上から下へスワイプして更新する</span>
+                    <div class="details">
+                        オンになっていたらオフにする
+                    </div>
+                </li>
+                <li class="a-li-3">
+                    <span class="toggle-button">⑶ メールアプリを開かないと通知が届かないことがある</span>
+                    <div class="details">
+                        オンになっていたらオフにする
+                    </div>
+                </li>
+                <li class="a-li-4">
+                    <span class="toggle-button">⑷ 迷惑メールフォルダを確認する</span>
+                    <div class="details">
+                        オンになっていたらオフにする
+                    </div>
+                </li>
+                <li class="a-li-5">
+                    <span class="toggle-button">⑸ 「全ての受信トレイ」に切り替えて確認する</span>
+                    <div class="details">
+                        オンになっていたらオフにする
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="lasts">
+        <span class="last">最終更新日5月29日</span>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('.toggle-button');
+            
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const details = this.nextElementSibling;
+                    details.classList.toggle('show');
+                });
+            });
+        });
+    </script>
 </body>
 </html>

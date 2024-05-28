@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Q2.css">
+    <link rel="stylesheet" href="template.css">
     <title>Document</title>
 </head>
 <body>
     <div class="title">
-        <span class="title_text">Q2：システムアップデートとは？</span>
+        <span class="title_text">Q: タイトルをここに入力</span>
     </div>
 
     <section class="sec">
@@ -17,26 +17,27 @@
         </div>
 
         <div class="a-list">
-            <p class="upd">大きなアップデート</p>
             <ul class="a-ul">
-                <li class="a-li-1">
-                    <span class="toggle-button">何をする？</span>
+                <li class="a-li">
+                    <span class="toggle-button">質問や項目1をここに入力</span>
                     <div class="details">
-                        スマホの基本的な部分が大きく変わるアップデートです。<br><br>新しい機能やデザインが追加されます。
+                        回答や詳細1をここに入力
                     </div>
                 </li>
-                <li class="a-li-2">
-                    <span class="toggle-button2">どれくらいの頻度？</span>
+                <li class="a-li">
+                    <span class="toggle-button">質問や項目2をここに入力</span>
                     <div class="details">
-                        年に1回程度、主要なアップデートがリリースされます。
+                        回答や詳細2をここに入力
+                        <button class="redirect-button" onclick="openAccessibilitySettings()">ユーザ補助機能設定を開く</button>
                     </div>
                 </li>
+                <!-- 必要に応じて追加の項目を追加してください -->
             </ul>
         </div>
     </section>
 
     <div class="lasts">
-        <span class="last">最終更新日6月2日</span>
+        <span class="last">最終更新日: 日付をここに入力</span>
     </div>
 
     <script>
@@ -50,16 +51,14 @@
                 });
             });
         });
-        document.addEventListener('DOMContentLoaded', function() {
-            const toggleButtons = document.querySelectorAll('.toggle-button2');
-            
-            toggleButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    const details = this.nextElementSibling;
-                    details.classList.toggle('show');
-                });
-            });
-        });
+
+        function openAccessibilitySettings() {
+            if (navigator.userAgent.match(/Android/i)) {
+                window.location.href = 'intent://settings#Intent;action=android.settings.ACCESSIBILITY_SETTINGS;end';
+            } else {
+                alert('この機能はAndroidデバイスでのみ利用可能です。');
+            }
+        }
     </script>
 </body>
 </html>
