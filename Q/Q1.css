@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: rgb(255, 199, 136);
+}
+
+.title {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.answer {
+    margin-top: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.a-list {
+    margin-top: 50px;
+    text-align: left;
+    font-weight: bold;
+    background-color: rgb(255, 225, 159);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.a-ul {
+    padding: 0;
+    margin-left: 27px;
+}
+
+.Q1-li {
+    color: rgb(145, 127, 111);
+}
