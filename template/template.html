@@ -53,8 +53,8 @@
         });
 
         function openAccessibilitySettings() {
-            if (navigator.userAgent.match(/Android/i)) {
-                window.location.href = 'intent://settings#Intent;action=android.settings.ACCESSIBILITY_SETTINGS;end';
+            if (window.AndroidFunction) {
+                window.AndroidFunction.openAccessibilitySettings();
             } else {
                 alert('この機能はAndroidデバイスでのみ利用可能です。');
             }
