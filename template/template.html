@@ -28,10 +28,8 @@
                     <span class="toggle-button">質問や項目2をここに入力</span>
                     <div class="details">
                         回答や詳細2をここに入力
-                        <button class="redirect-button" onclick="openAccessibilitySettings()">ユーザ補助機能設定を開く</button>
                     </div>
                 </li>
-                <!-- 必要に応じて追加の項目を追加してください -->
             </ul>
         </div>
     </section>
@@ -39,26 +37,5 @@
     <div class="lasts">
         <span class="last">最終更新日: 日付をここに入力</span>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const toggleButtons = document.querySelectorAll('.toggle-button');
-            
-            toggleButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    const details = this.nextElementSibling;
-                    details.classList.toggle('show');
-                });
-            });
-        });
-
-        function openAccessibilitySettings() {
-            if (window.AndroidFunction) {
-                window.AndroidFunction.openAccessibilitySettings();
-            } else {
-                alert('この機能はAndroidデバイスでのみ利用可能です。');
-            }
-        }
-    </script>
 </body>
 </html>

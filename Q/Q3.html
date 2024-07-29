@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="Q3.css">
     <title>Document</title>
 </head>
 <body>
     <div class="title">
-        <span class="title_text">Q: タイトルをここに入力</span>
+        <span class="title_text">Q: ユーザ補助機能について</span>
     </div>
 
     <section class="sec">
-        <div class="answer">
-            <span class="answer-video"><a href="#">動画で見る</a></span>
-        </div>
 
         <div class="a-list">
             <ul class="a-ul">
@@ -28,7 +25,6 @@
                     <span class="toggle-button">質問や項目2をここに入力</span>
                     <div class="details">
                         回答や詳細2をここに入力
-                        <button class="redirect-button" onclick="openAccessibilitySettings()">ユーザ補助機能設定を開く</button>
                     </div>
                 </li>
                 <!-- 必要に応じて追加の項目を追加してください -->
@@ -51,14 +47,6 @@
                 });
             });
         });
-
-        function openAccessibilitySettings() {
-            if (navigator.userAgent.match(/Android/i)) {
-                window.location.href = 'intent://settings#Intent;action=android.settings.ACCESSIBILITY_SETTINGS;end';
-            } else {
-                alert('この機能はAndroidデバイスでのみ利用可能です。');
-            }
-        }
     </script>
 </body>
 </html>
